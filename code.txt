@@ -1,0 +1,18 @@
+View(deliveries)
+
+View(matches)
+
+library(ggplot2)
+
+install.packages("ggplot2", "reshape2", "plyr", "languageR",
+
+ggplot(deliveries, aes(x = inning, y = over, group = ball)) + geom_line(aes(colour = ball))+geom_point(pch = 18, size = 4)
+
+
+hist(deliveries)
+
+
+ggplot(matches, aes(x = season, y = city, group = winner)) + geom_line(aes(colour = winner ))+geom_point(pch= 18, size=4)
+
+
+
